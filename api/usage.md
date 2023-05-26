@@ -12,10 +12,10 @@ To make your first request, send an authenticated request to the /api/auth/me en
 
 {% swagger baseUrl="https://demo.getlynx.dev/api" method="get" path="/auth/me" summary="Get Account" %}
 {% swagger-description %}
-Returns the currently logged-in account.
+
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" required="true" %}
+{% swagger-parameter in="header" name="Authorization" required="false" %}
 Your API key
 {% endswagger-parameter %}
 
@@ -32,7 +32,8 @@ Your JWT Session
         "username":"demo",
         "email":"demo@example.com",
         "role":"standard",
-        "secret":"uihJEIwC0jjGIF0BhZnY7xI90jN664La"
+        "secret":"uihJEIwC0jjGIF0BhZnY7xI90jN664La",
+        "totp": false,
     }
 }
 ```
