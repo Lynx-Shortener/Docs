@@ -11,3 +11,4 @@
   * [Import](api/api-reference/import.md)
   * [Export](api/api-reference/export.md)
   * [About](api/api-reference/about.md)
+  * [ShareX](api/api-reference/sharex.md)
