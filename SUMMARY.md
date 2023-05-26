@@ -2,6 +2,13 @@
 
 * [Welcome!](README.md)
 
+## Installation
+
+* [Native](installation/native.md)
+* [Docker](installation/docker.md)
+* [Post Installation](installation/post-installation.md)
+* [Environment Variables](installation/environment-variables.md)
+
 ## API
 
 * [Using the API](api/usage.md)
@@ -12,3 +19,7 @@
   * [Export](api/api-reference/export.md)
   * [About](api/api-reference/about.md)
   * [ShareX](api/api-reference/sharex.md)
+
+***
+
+* [Roadmap](https://github.com/orgs/Lynx-Shortener/projects/2)
