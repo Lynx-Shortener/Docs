@@ -1,12 +1,12 @@
 # Table of contents
 
-* [Welcome!](README.md)
+* [Welcome](README.md)
 
 ## Installation
 
 * [Installation](installation/installation/README.md)
-  * [Native](installation/installation/native.md)
-  * [Docker](installation/installation/docker.md)
+  * [Native](installation/native.md)
+  * [Docker](installation/docker.md)
 * [Post Installation](installation/post-installation.md)
 * [Environment Variables](installation/environment-variables.md)
 

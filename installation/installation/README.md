@@ -2,8 +2,8 @@
 
 Lynx supports 2 installation methods:
 
-* [Native](native.md)
-* [Docker](docker.md)
+* [Native](../native.md)
+* [Docker](../docker.md)
 
 It has also been added to the following panels:
 

@@ -47,3 +47,9 @@ Your JWT Session
 
 {% endswagger-response %}
 {% endswagger %}
+
+## Explore the full API documentation
+
+{% content-ref url="api-reference/" %}
+[api-reference](api-reference/)
+{% endcontent-ref %}
