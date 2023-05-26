@@ -8,4 +8,4 @@
 * [API Reference](api/api-reference/README.md)
   * [Links](api/api-reference/links.md)
   * [Import](api/api-reference/import.md)
-  * [Export](api/api-reference/import-1.md)
+  * [Export](api/api-reference/export.md)
