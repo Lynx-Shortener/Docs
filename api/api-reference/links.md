@@ -7,7 +7,7 @@
 Retrieves the destination of link by its slug (unauthed).
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="slug" %}
+{% swagger-parameter in="query" name="slug" required="true" %}
 The slug of the link
 {% endswagger-parameter %}
 
@@ -44,7 +44,7 @@ Your API key
 Your JWT Session
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="id" %}
+{% swagger-parameter in="query" name="id" required="true" %}
 The slug of the link
 {% endswagger-parameter %}
 
@@ -87,11 +87,11 @@ Your API key
 Your JWT Session
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pagesize" %}
+{% swagger-parameter in="query" name="pagesize" required="true" %}
 Items to return in a page, up to 100.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="page" %}
+{% swagger-parameter in="query" name="page" required="true" %}
 The current page to return, 0-base indexed.
 {% endswagger-parameter %}
 
@@ -99,11 +99,11 @@ The current page to return, 0-base indexed.
 Value to search slug and destination by.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="sortType" type="Intege" %}
+{% swagger-parameter in="query" name="sortType" type="Intege" required="true" %}
 Order to sort by. -1 or 1.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="sortField" %}
+{% swagger-parameter in="query" name="sortField" required="true" %}
 Field to sort by. id, slug, destination, author, creationDate, modifiedDate or visits.
 {% endswagger-parameter %}
 

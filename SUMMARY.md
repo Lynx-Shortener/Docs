@@ -4,8 +4,9 @@
 
 ## Installation
 
-* [Native](installation/native.md)
-* [Docker](installation/docker.md)
+* [Installation](installation/installation/README.md)
+  * [Native](installation/installation/native.md)
+  * [Docker](installation/installation/docker.md)
 * [Post Installation](installation/post-installation.md)
 * [Environment Variables](installation/environment-variables.md)
 

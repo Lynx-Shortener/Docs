@@ -39,7 +39,7 @@ Enter the Lynx directory:
 cd Lynx
 ```
 
-Rename `.example.env` to `.env` and set the [environment variables ](environment-variables.md)to match your setup and requirements.
+Rename `.example.env` to `.env` and set the [environment variables ](../environment-variables.md)to match your setup and requirements.
 
 ### Build the frontend
 
@@ -85,8 +85,8 @@ Lynx should now be accessible at [localhost:3000](http://localhost:3000)
 
 Now go to Post Installation&#x20;
 
-{% content-ref url="post-installation.md" %}
-[post-installation.md](post-installation.md)
+{% content-ref url="../post-installation.md" %}
+[post-installation.md](../post-installation.md)
 {% endcontent-ref %}
 
 ###
