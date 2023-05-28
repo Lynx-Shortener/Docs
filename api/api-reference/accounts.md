@@ -181,10 +181,6 @@ Your JWT Session
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" required="false" %}
-Your API key
-{% endswagger-parameter %}
-
 {% swagger-parameter in="cookie" name="token" %}
 Your JWT Session
 {% endswagger-parameter %}
@@ -223,10 +219,6 @@ Your JWT Session
 {% swagger-description %}
 
 {% endswagger-description %}
-
-{% swagger-parameter in="header" name="Authorization" required="false" %}
-Your API key
-{% endswagger-parameter %}
 
 {% swagger-parameter in="cookie" name="token" %}
 Your JWT Session
@@ -278,10 +270,6 @@ Your JWT Session
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" required="false" %}
-Your API key
-{% endswagger-parameter %}
-
 {% swagger-parameter in="cookie" name="token" %}
 Your JWT Session
 {% endswagger-parameter %}
@@ -325,14 +313,6 @@ Your JWT Session
 
 {% swagger-parameter in="body" name="password" required="true" %}
 
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="Authorization" required="false" %}
-Your API key
-{% endswagger-parameter %}
-
-{% swagger-parameter in="cookie" name="token" %}
-Your JWT Session
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="backupCode" required="true" %}
@@ -411,6 +391,10 @@ db.accounts.findOneAndUpdate({ username: "user2" },{ $set:{ "totp.enabled":false
 2FA Token (If Enabled)
 {% endswagger-parameter %}
 
+{% swagger-parameter in="cookie" name="token" required="true" %}
+Your JWT Session
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Successfully updated email" %}
 ```javascript
 {
@@ -448,6 +432,10 @@ db.accounts.findOneAndUpdate({ username: "user2" },{ $set:{ "totp.enabled":false
 
 {% swagger-parameter in="body" name="token" %}
 2FA Token (If Enabled)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="cookie" name="token" required="true" %}
+Your JWT Session
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successfully updated password" %}
@@ -489,6 +477,10 @@ db.accounts.findOneAndUpdate({ username: "user2" },{ $set:{ "totp.enabled":false
 2FA Token (If Enabled)
 {% endswagger-parameter %}
 
+{% swagger-parameter in="cookie" name="token" required="true" %}
+Your JWT Session
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="Successfully updated username" %}
 ```javascript
 {
@@ -510,4 +502,35 @@ db.accounts.findOneAndUpdate({ username: "user2" },{ $set:{ "totp.enabled":false
 
 {% endswagger-response %}
 {% endswagger %}
+
+
+
+## Other
+
+{% swagger baseUrl="https://demo.getlynx.dev/api" method="post" path="/auth/newSecret" summary="Get new secret" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="New Secret generated" %}
+```javascript
+{
+    "success": true,
+    "result":{
+        "secret": "uihJEIwC0jjGIF0BhZnY7xI90jN664La",
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+
+{% endswagger-response %}
+
+{% swagger-response status="500: Internal Server Error" description="" %}
+
+{% endswagger-response %}
+{% endswagger %}
+
+
 
