@@ -10,6 +10,10 @@
 * [Post Installation](installation/post-installation.md)
 * [Environment Variables](installation/environment-variables.md)
 
+## Guides
+
+* [Backups](guides/backups.md)
+
 ## API
 
 * [Using the API](api/usage.md)
