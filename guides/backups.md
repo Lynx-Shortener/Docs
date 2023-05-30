@@ -1,6 +1,6 @@
 # Backups
 
-Lynx has basic support for backing up your Links.&#x20;
+Lynx has basic support for backing up your links.&#x20;
 
 On a crontab schedule it will back up **all** of your links to a set directory, keeping the last x backups.
 
