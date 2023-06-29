@@ -39,6 +39,8 @@ Lynx comes with full support for Umami, both standard tracking and events.
 | UMAMI\_SITEID | Your umami site ID, blank to disable. | 224d86da-1209-4b8b-ad98-b24d300efa55                                         |
 | UMAMI\_URL    | The URL to your umami instance.       | [https://analytics.umami.is/script.js](https://analytics.umami.is/script.js) |
 
+For Umami to track links being used, `FORCE_FRONTEND_REDIRECT` will need to be set to `true`. This may slightly increase redirect times.
+
 ## Backups
 
 | Variable         | Description                                                                                        | Example       |
