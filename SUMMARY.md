@@ -19,6 +19,7 @@
 * [Using the API](api/usage.md)
 * [API Reference](api/api-reference/README.md)
   * [Accounts](api/api-reference/accounts.md)
+  * [Users](api/api-reference/users.md)
   * [Links](api/api-reference/links.md)
   * [Import](api/api-reference/import.md)
   * [Export](api/api-reference/export.md)
